@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <h1 id="mouse">Mouse</h1>
+    <label id="contaMouse"></label>
+    <br/>
+    <hr/>
+    <br/>
+    <h1 id=click>Click</h1>
+    <label id="contaClick"></label>
+    <script>
+  //var icontador=0;
+    //function contador(){
+      //var icontador= icontador+ 1;
+      //document.getElementById("contaMouse").innerHTML = icontador;
+   //}
+     var iMouse = 0;
+  var iClick = 0;
+   document.getElementById("click").onclick = function tomaClick(){
+   iClick = iClick + 1;
+     document.getElementById("contaClick").innerHTML = iClick;
+   }
+
+  document.getElementById("mouse").onmouseover = function tomamouse(){
+    iMouse= iMouse + 1;
+    document.getElementById("contaMouse").innerHTML = iMouse;
+  }
+
+
+
+    </script>
+  </body>
+</html>
